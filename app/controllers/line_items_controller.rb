@@ -1,6 +1,5 @@
 class LineItemsController < ApplicationController
   def create
-    #binding.pry
     line_item = nil
     item = Item.find(params[:item_id])
     if current_user.current_cart.nil?
